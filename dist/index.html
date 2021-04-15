@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="header-area">
+        <div header="conteudo--header">
+            <form class="area---input">
+                <input type="text" placeholder="First Name" id="firstName" required>
+                <input type="text" placeholder="Last Name" id="lastName" required>
+                <input type="number" placeholder="Participation" id="participation" required>
+                <button class="button" onclick="addLinha('tbl')">Adicionar</button>
+            </form>
+        </div>
+    </div>
+    <div class="main">
+        <div class="area--title">
+            <h1>DATA</h1>
+            <p>Lorem Ipsum é simplesmente um texto fictício da indústria de impressão e composição</p>
+        </div>
+    </div>
+    <div class="info">
+        <div class="conteudo--info">
+            <div class="table">
+                <table id="tbl" border="1">
+                    <tr>
+                        <td>First Name</td>
+                        <td>Last Name</td>
+                        <td>Participation</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="grafico--area">
+                <canvas id="doughnut-chart"></canvas>
+            </div>
+        </div>
+    </div>
+    
+    <script src="home.bundle.js"></script>
+    <script src="grafico.bundle.js"></script>
+</body>
+
+</html>
